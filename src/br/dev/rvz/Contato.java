@@ -10,15 +10,15 @@ public class Contato {
 
     private String nome;
     private Endereco endereco;
-    private List<String> telefone = new ArrayList<>();
+    private List<String> telefones = new ArrayList<>();
 
     public Contato() {
     }
 
-    public Contato(String nome, Endereco endereco, List<String> telefone) {
+    public Contato(String nome, Endereco endereco, List<String> telefones) {
         this.nome = nome;
         this.endereco = endereco;
-        this.telefone = telefone;
+        this.telefones = telefones;
     }
 
     public String getNome() {
@@ -37,11 +37,11 @@ public class Contato {
         this.endereco = endereco;
     }
 
-    public List<String> getTelefone() {
-        return telefone;
+    public List<String> getTelefones() {
+        return telefones;
     }
 
-    public void setTelefone(List<String> telefone) {
-        this.telefone = telefone;
+    public void setTelefones(List<String> telefone) {
+        this.telefones = telefone;
     }
 }

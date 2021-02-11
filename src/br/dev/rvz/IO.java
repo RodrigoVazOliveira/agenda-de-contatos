@@ -10,7 +10,7 @@ public class IO {
         return new Scanner(System.in);
     }
 
-    public void output(String texto) {
+    public static void output(String texto) {
         System.out.println(texto);
     }
 }
