@@ -44,4 +44,13 @@ public class Contato {
     public void setTelefones(List<String> telefone) {
         this.telefones = telefone;
     }
+
+    @Override
+    public String toString() {
+        return "Contato{" +
+                "nome='" + nome + '\'' +
+                ", endereco=" + endereco +
+                ", telefones=" + telefones +
+                '}';
+    }
 }

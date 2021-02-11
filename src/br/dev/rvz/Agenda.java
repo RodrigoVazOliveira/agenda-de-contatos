@@ -27,4 +27,13 @@ public class Agenda {
     public void setContatos(List<Contato> contatos) {
         this.contatos = contatos;
     }
+
+    public void listarAgenda() {
+        String agenda = "Nome da agenda: " + this.getNome() + " \n";
+        for (Contato item : contatos) {
+            agenda += "\n=========================================================";
+            agenda += "\n" + item.toString();
+        }
+        IO.output(agenda);
+    }
 }

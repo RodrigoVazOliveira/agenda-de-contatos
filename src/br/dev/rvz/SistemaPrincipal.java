@@ -26,7 +26,9 @@ public class SistemaPrincipal {
             if (opcoes == 1) {
                 adicionarAgenda();
             } else if (opcoes == 2) {
-
+                for (Agenda itensAgenda : agendas) {
+                    itensAgenda.listarAgenda();
+                }
             } else if (opcoes == 3) {
                 executar = false;
             } else {
@@ -45,6 +47,7 @@ public class SistemaPrincipal {
         IO.output("Por favor, quantos contatos deseja adiconar?");
         int numeroDeContatos = IO.input().nextInt();
         adiconarContatosNaAgenda(agenda, numeroDeContatos);
+        agendas.add(agenda);
     }
 
 
@@ -70,6 +73,7 @@ public class SistemaPrincipal {
             adicionarTelefonesNoContato(contato);
             agenda.getContatos().add(contato);
         }
+
     }
 
 
